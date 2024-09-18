@@ -8,7 +8,7 @@ const Layout: NextPage<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="w-full bg-whiteColor text-blackColor">
       <Header />
-      <div className="max-w-[1100px] mx-auto z-10">{children}</div>
+      <div className="max-w-[1100px] mx-auto p-2">{children}</div>
       <BottomNavigation />
       <Footer />
     </div>

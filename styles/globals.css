@@ -7,3 +7,14 @@
 body {
   font-family: "Vazirmatn";
 }
+:root {
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-size: 7px;
+  --swiper-pagination-bullet-width: 7px;
+  --swiper-pagination-bullet-height: 7px;
+  --swiper-pagination-bullet-inactive-color: white;
+  --swiper-pagination-bullet-inactive-opacity: .7;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 2px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+}

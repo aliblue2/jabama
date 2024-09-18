@@ -26,7 +26,7 @@ const Header = () => {
               type="text"
               name="search"
               id="search"
-              className="p-2 outline-none"
+              className="w-full p-2 outline-none"
               placeholder="جستجو شهرُ استان یا اقامتگاه"
             />
           </div>

@@ -13,7 +13,7 @@ import {
 const BottomNavigation = () => {
   const pathName = usePathname();
   return (
-    <div className="fixed bottom-0 left-0 flex items-center justify-between w-full gap-2 px-5 py-2 text-xs bg-white border rounded-t-lg shadow-2xl h-14 shadow-orange-500 sm:hidden">
+    <div className="fixed bottom-0 left-0 z-10 flex items-center justify-between w-full gap-2 px-5 py-2 text-xs bg-white border rounded-t-lg shadow-2xl h-14 shadow-orange-500 sm:hidden">
       <Link
         className={`flex flex-col items-center justify-center gap-1 font-medium text-[11px] w-20 ${
           pathName === "/" ? "text-blackColor" : "text-gray-400"
