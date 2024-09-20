@@ -8,6 +8,7 @@ import {
 } from "react-icons/io5";
 import PrimaryBtn from "./PrimaryBtn";
 import { useScroll, useTransform, motion } from "framer-motion";
+import Link from "next/link";
 
 const Header = () => {
   const { scrollY } = useScroll();
@@ -19,7 +20,9 @@ const Header = () => {
         className="sticky top-0 z-20 w-full h-16 "
       >
         <div className="flex items-center justify-between gap-5 h-full max-w-[1100px] mx-auto px-5">
-          <Image src={logoImage} alt="jabma logo image" />
+          <Link href={"/"}>
+            <Image src={logoImage} alt="jabma logo image" />
+          </Link>
           <div className="items-center justify-start hidden w-4/12 gap-1 px-2 text-sm bg-white border rounded-lg md:flex focus:border-primaryColor">
             <IoSearch size={20} className="text-primaryColor" />
             <input

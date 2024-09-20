@@ -1,4 +1,4 @@
-interface PlaceInfo {
+export interface PlaceInfo {
   space: number;
   cepacity: number;
   bedrooms: number;
@@ -6,21 +6,21 @@ interface PlaceInfo {
   kitchen: number;
 }
 
-interface PlaceFeatures {
-  network: boolean;
-  television: boolean;
-  pool: boolean;
-  cooler: boolean;
-  heater: boolean;
-  parking: boolean;
+export interface PlaceFeatures {
+  network: string;
+  television: string;
+  pool: string;
+  cooler: string;
+  heater: string;
+  parking: string;
 }
 
-interface PlacePolicy {
-  pet: boolean;
-  party: boolean;
-  id_cart: boolean;
-  smoking: boolean;
-  accept_per_day: boolean;
+export interface PlacePolicy {
+  pet: string;
+  party: string;
+  id_cart: string;
+  smoking: string;
+  accept_per_day: string;
 }
 
 interface PlaceRating {

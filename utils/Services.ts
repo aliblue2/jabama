@@ -20,7 +20,7 @@ export async function getAllPopularDestinations() {
   return response.data;
 }
 
-export async function getAllPlaces(state: string) {
+export async function getAllPlaces(state?: string) {
   let baseurl =
     "https://kdrgwcpqfockdmwynwgz.supabase.co/rest/v1/places?select=*";
   if (state && state.trim() !== "") {
@@ -35,6 +35,22 @@ export async function getAllPlaces(state: string) {
 
   if (response.status >= 400 || response.status >= 500) {
     throw new Error("cant fetch all places");
+  }
+
+  return response.data;
+}
+
+export async function getPlaceInfo(placeId: string) {
+  const baseUrl = `https://kdrgwcpqfockdmwynwgz.supabase.co/rest/v1/places?id=eq.${placeId}&select=*`;
+  const response = await axios.get(baseUrl, {
+    headers: {
+      apikey: apiKey,
+      Authorization: apiKey,
+    },
+  });
+
+  if (response.status >= 500 || response.status >= 400) {
+    throw new Error("cant fetch place information");
   }
 
   return response.data;

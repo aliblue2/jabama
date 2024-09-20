@@ -63,7 +63,7 @@ const PlaceSlider: NextPage<{
                 </Swiper>
               </div>
               <Link
-                href={`/places/${place.title}`}
+                href={`/places/${place.id}`}
                 className="flex flex-col items-start justify-start gap-1 mt-2"
               >
                 <p className="text-xs flex items-center justify-start gap-1">
@@ -79,7 +79,7 @@ const PlaceSlider: NextPage<{
                   {place.title}
                 </h6>
                 <span className="text-xs text-gray-500">
-                  {"استان "+place.state + "، "}
+                  {"استان " + place.state + "، "}
                   {place.city}
                 </span>
                 <h6 className="text-xs font-bold line-clamp-1">

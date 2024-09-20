@@ -4,7 +4,7 @@ interface UserInfo {
   first_travel: string;
 }
 
-export interface Comment {
+export interface UserComment {
   id: number;
   title: string;
   content: string;

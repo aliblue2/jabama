@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaInstagram, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className="mb-12 bg-white sm:mb-0">
+    <footer className="mb-12 bg-whiteColor sm:mb-0">
       <div className="max-w-[1100px] mx-auto">
         <div className="grid grid-cols-2 gap-5 p-5 md:grid-cols-4">
           <div className="col-span-1">

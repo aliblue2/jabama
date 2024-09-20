@@ -2,8 +2,7 @@ import { PopPlace } from "@/models/PopPlaces";
 import { NextPage } from "next";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+
 import Image from "next/image";
 
 const PopularDestinationSlider: NextPage<{ destinationsData: PopPlace[] }> = ({
