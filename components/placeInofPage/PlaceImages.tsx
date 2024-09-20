@@ -5,12 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const PlaceImages: NextPage<{ images: string[] }> = ({ images }) => {
   return (
-    <>
-      <div className="hidden grid-cols-2 gap-2 mt-3 md:grid">
+    <div className="group">
+      <div className="hidden grid-cols-2 gap-2 mt-3 md:grid ">
         <Image
           src={images[0]}
           alt="main image"
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full group-hover:grayscale hover:!grayscale-0 "
           width={300}
           height={150}
         />
@@ -21,7 +21,7 @@ const PlaceImages: NextPage<{ images: string[] }> = ({ images }) => {
                 src={imageData}
                 key={imageData}
                 alt="images gallery"
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full group-hover:grayscale hover:!grayscale-0 "
                 width={300}
                 height={150}
               />
@@ -52,7 +52,7 @@ const PlaceImages: NextPage<{ images: string[] }> = ({ images }) => {
           })}
         </Swiper>
       </div>
-    </>
+    </div>
   );
 };
 

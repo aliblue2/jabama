@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Header = () => {
   const { scrollY } = useScroll();
-  const headerBgColor = useTransform(scrollY, [0, 200], ["#0000", "#fff"]);
+  const headerBgColor = useTransform(scrollY, [0, 400], ["#0000", "#fff"]);
   return (
     <>
       <motion.header

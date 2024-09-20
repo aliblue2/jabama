@@ -7,6 +7,8 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Loading from "@/components/common/Loading";
 
+
+
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);

@@ -9,10 +9,10 @@ const Index: NextPage<{ placeInfo: Place }> = ({ placeInfo }) => {
   tempGallery.push(placeInfo.image);
 
   return (
-    <>
+    <section>
       <PlaceImages images={tempGallery} />
       <PlaceInfo place={placeInfo} />
-    </>
+    </section>
   );
 };
 

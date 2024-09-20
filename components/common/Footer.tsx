@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="p-5 bg-whiteColor">
+      <div className="p-5 bg-gray-200">
         <div className="max-w-[1100px] mx-auto flex md:flex-row flex-col items-center justify-between">
           <p className="text-sm">در تمامی سفر‌های شما، ۲۴ ساعته در کنار شما هستیم.</p>
           <div className="flex flex-col items-center justify-start gap-5 text-xs md:flex-row">

@@ -39,7 +39,7 @@ const PlaceSlider: NextPage<{
 
           return (
             <SwiperSlide key={place.id}>
-              <div>
+              <Link href={`/places/${place.id}`}>
                 <Swiper
                   pagination={{
                     dynamicBullets: true,
@@ -61,7 +61,7 @@ const PlaceSlider: NextPage<{
                     );
                   })}
                 </Swiper>
-              </div>
+              </Link>
               <Link
                 href={`/places/${place.id}`}
                 className="flex flex-col items-start justify-start gap-1 mt-2"

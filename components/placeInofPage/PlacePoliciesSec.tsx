@@ -10,7 +10,7 @@ const PlacePoliciesSec: NextPage<{ palcePoliccies: PlacePolicy }> = ({
     <div className="w-full p-3 border-t border-gray-300">
       <h6 className="mb-5 text-lg font-medium">قوانین و مقررات آپارتمان</h6>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <p className="flex items-start justify-start gap-2 w-full">
+        <div className="flex items-start justify-start gap-2 w-full">
           <IoCloseCircleOutline size={20} />
           <div className="flex flex-col items-start justify-center gap-1">
             <h6 className="font-medium text-sm">قوانین لغو رزرو</h6>
@@ -18,12 +18,12 @@ const PlacePoliciesSec: NextPage<{ palcePoliccies: PlacePolicy }> = ({
               مشاهده دقیق جزئیات لغو رزرو آپارتمان
             </span>
           </div>
-        </p>
+        </div>
         <div className="flex flex-col items-start justify-start gap-5">
-          <p className="flex items-center justify-start gap-2 w-full">
+          <div className="flex items-center justify-start gap-2 w-full">
             <IoDocumentOutline size={20} />
             <h6 className="font-medium text-sm">مقررات آپارتمان</h6>
-          </p>
+          </div>
           <PolicyItem itemState={palcePoliccies.smoking}>
             استعمال دخانیات مجاز است.
           </PolicyItem>

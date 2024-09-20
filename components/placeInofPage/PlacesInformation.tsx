@@ -11,49 +11,49 @@ const PlacesInformation: NextPage<{ placeInfo: PlaceInfo }> = ({
       <h6 className="mb-5 text-lg font-medium">مشخصات کلی ویلا</h6>
       <div className="flex items-center justify-start w-full gap-2 my-3">
         <IoHomeOutline size={24} />
-        <p>
+        <div>
           <h6 className="font-medium">فضای ویلا</h6>
           <span className="text-sm">
             {placeInfo.space + " "}متر زیربنا دربست ۵ پله{" "}
           </span>
-        </p>
+        </div>
       </div>
       <div className="flex items-center justify-start w-full gap-2 my-3">
         <IoPersonOutline size={24} />
-        <p>
+        <div>
           <h6 className="font-medium">ظرفیت </h6>
           <span className="text-sm">
             ظرفیت تا{" " + placeInfo.cepacity + " نفر"}
           </span>
-        </p>
+        </div>
       </div>
       <div className="flex items-center justify-start w-full gap-2 my-3">
         <IoBedOutline size={24} />
-        <p>
+        <div>
           <h6 className="font-medium"> سرویس‌های خواب </h6>
           <span className="text-sm">
             {placeInfo.bedrooms + " "} اتاق ۱ تخت دو نفره ۲ تخت یک نفره ۲
             رخت‌خواب سنتی{" "}
           </span>
-        </p>
+        </div>
       </div>
       <div className="flex items-center justify-start w-full gap-2 my-3">
         <TbToiletPaper size={24} />
-        <p>
+        <div>
           <h6 className="font-medium"> سرویس‌های بهداشتی </h6>
           <span className="text-sm">
             {placeInfo.bathroom + " "} سرویس ایرانی سرویس فرنگی ندارد ۱ حمام
           </span>
-        </p>
+        </div>
       </div>
       <div className="flex items-center justify-start w-full gap-2 my-3">
         <TbToolsKitchen2 size={24} />
-        <p>
+        <div>
           <h6 className="font-medium">آشپزخانه</h6>
           <span className="text-sm">
             {placeInfo.kitchen + " "} آشپزخانه و ۱ فر
           </span>
-        </p>
+        </div>
       </div>
     </div>
   );
