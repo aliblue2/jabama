@@ -3,8 +3,8 @@ import { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
 
 interface DatePickerVars {
-  startDate: Date;
-  endDate: Date;
+  startDate: Date | null;
+  endDate: Date | null;
 }
 
 const PlaceDateRange: NextPage = ({}) => {
@@ -24,11 +24,9 @@ const PlaceDateRange: NextPage = ({}) => {
         value={value}
         startWeekOn="sat"
         onChange={(newValue) =>
-          setValue(() => {
-            return {
-              startDate: newValue?.startDate,
-              endDate: newValue?.endDate,
-            };
+          setValue({
+            startDate: newValue?.startDate ?? null,
+            endDate: newValue?.endDate ?? null,
           })
         }
         useRange={false}
